@@ -1,0 +1,321 @@
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "tabla tabla tabla"
+						 "footer footer footer";
+}
+
+
+.menu{
+	grid-area: menu;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tit{
+	grid-column: 2 / 3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu #buscar{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu #busqueda{
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+}
+
+.menu #box_search{
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+
+.contenido .miTabla{
+	grid-area: tabla;
+}
+
+.parteI{
+	display: grid;
+	grid-template-areas: "principal principal"
+						 "imagen puntos"
+						 "imagen horas"
+						 "imagen nivel";
+}
+
+.parteI .principal{
+	grid-area: principal;
+}
+
+.parteI .imagen{
+	grid-area: imagen;
+}
+.parteI .puntos{
+	grid-area: puntos;
+}
+.parteI .horas{
+	grid-area: horas;
+}
+.parteI .nivel{
+	grid-area: nivel;
+}
+
+
+
+.parteII{
+	display: grid;
+	grid-template-areas: "principal principal principal principal"
+						 "seccion turno docente participantes"
+						 "nota nota nota nota";
+}
+
+.parteII .principal{
+	grid-area: principal;
+}
+
+.parteII .seccion{
+	grid-area: seccion;
+}
+.parteII .turno{
+	grid-area: turno;
+}
+
+.parteII .docente{
+	grid-area: docente;
+}
+
+.parteII .participantes{
+	grid-area: participantes;
+}
+
+.nota{
+	grid-column: 1 / 5;
+}
+
+.footer{
+	grid-area: footer;
+}
+
+
+@media screen and (max-width: 700px){
+	.tit{
+        grid-column: 1 / 4;
+        margin: 0px;
+    }
+
+     #buscar{
+        grid-row: 1 / 2; 
+    }
+
+    .menu #busqueda{
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.menu #box_search{
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}
+
+
+}
+
+@media screen and (max-width: 750px){
+
+	.parteI .principal{
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+	}
+
+	.parteI .imagen{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+	}
+
+	.parteI .puntos{
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+		border-left: solid .5px #0C7F88;
+	}
+
+	.parteI .horas{
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}
+	.parteI .nivel{
+		grid-column: 1 / 4;
+		grid-row: 5 / 6;
+		border-left: solid .5px #0C7F88;
+	}
+
+	.parteI .ofi{
+		width: 100%;
+		height: 100%;
+	}
+
+
+	.parteII .principal{
+		grid-column: 1 / 5;
+		grid-row: 1 / 2;
+	}
+	.parteII .seccion{
+		grid-column: 1 / 5;
+		grid-row: 2 / 3;
+	}
+	.parteII .ofimatI{
+		grid-column: 1 / 5;
+		grid-row: 3 / 4;
+	}
+	.parteII .turno{
+		grid-column: 1 / 5;
+		grid-row: 4 / 5;
+	}
+	.parteII .horarioI{
+		grid-column: 1 / 5;
+		grid-row: 5 / 6;
+	}
+	.parteII .docente{
+		grid-column: 1 / 5;
+		grid-row: 6 / 7;
+	}
+	.parteII .profI{
+		grid-column: 1 / 5;
+		grid-row: 7 / 8;
+	}
+	.parteII .participantes{
+		grid-column: 1 / 5;
+		grid-row: 8 / 9;
+	}
+	.parteII .participI{
+		grid-column: 1 / 5;
+		grid-row: 9 / 10;
+	}
+
+	.parteII .seccionII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 10 / 11;
+	}
+	.parteII .ofimatII{
+		grid-column: 1 / 5;
+		grid-row: 11 / 12;
+	}
+	.parteII .docenteII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 12 / 13;
+	}
+	.parteII .profII{
+		grid-column: 1 / 5;
+		grid-row: 13 / 14;
+	}
+	.parteII .turnoII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 14 / 15;
+	}
+	.parteII .horarioII{
+		grid-column: 1 / 5;
+		grid-row: 15 / 16;
+	}
+	.parteII .participantesII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 16 / 17;
+	}
+
+	.parteII .participII{
+		grid-column: 1 / 5;
+		grid-row: 17 / 18;
+	}
+
+	.parteII .seccionIII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 18 / 19;
+	}
+
+	.parteII .ofimatIII{
+		grid-column: 1 / 5;
+		grid-row: 19 / 20;
+	}
+
+	.parteII .turnoIII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 20 / 21;
+	}
+	.parteII .horarioIII{
+		grid-column: 1 / 5;
+		grid-row: 21 / 22;
+	}
+	.parteII .docenteIII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 22 / 23;
+	}
+	.parteII .profIII{
+		grid-column: 1 / 5;
+		grid-row: 23 / 24;
+	}
+	.parteII .participantesIII{
+		display: block;
+		grid-column: 1 / 5;
+		grid-row: 24 / 25;
+	}
+	.parteII .participIII{
+		grid-column: 1 / 5;
+		grid-row: 25 / 26;
+	}
+	.nota{
+		grid-column: 1 / 5;
+		grid-row: 26 / 27;
+	}
+
+	.footer a, .footer p, .comp, .tablet, .telef{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 500px){
+	.opt{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.cotlaeb{
+		display: none;
+	}
+	.menu #buscar {
+		grid-column: 1 / 4;
+		margin-top: 20px;
+	
+	}
+
+	.tit{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+		justify-content: center;
+	}	
+}

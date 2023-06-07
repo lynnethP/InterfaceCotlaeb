@@ -1,0 +1,83 @@
+.contenedor{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "form form form"
+						 "footer footer footer";
+}
+
+
+.menu{
+	grid-area: menu;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.sesi{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.form{
+	grid-area: form;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer{
+	grid-area: footer;
+}
+
+
+@media screen and (max-width: 800px){
+	
+	#formulario{
+		width: 50%;
+	}	
+}
+
+@media screen and (max-width: 600px){
+	
+	.footer a, .footer p, .comp, .tablet, .telef{
+		display: none;
+	}	
+
+	#formulario{
+		width: 60%;
+	}	
+}
+
+@media screen and (max-width: 450px) {
+	.cotlaeb{
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+		margin-bottom: 20px;
+	}
+	
+	.sesi{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+	}
+
+	#formulario{
+		width: 70%;
+	}	
+}

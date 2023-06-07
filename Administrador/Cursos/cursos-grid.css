@@ -1,0 +1,111 @@
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "tabla tabla tabla"
+						 "footer footer footer";
+}
+
+
+.menu{
+	grid-area: menu;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tit{
+	grid-column: 2 / 3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#buscar{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#busqueda{
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+}
+
+#box_search{
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+
+
+.contenido .miTabla{
+	grid-area: tabla;
+}
+
+
+.reportes{
+	/*grid-column: 2 / 3;*/
+	display: grid;
+	grid-gap: 30px;
+	grid-template-areas: "pdf"
+						 "calculo"
+						 "graficos";
+	/*margin-left: 5%;*/
+}
+
+.footer{
+	grid-area: footer;
+}
+
+
+@media screen and (max-width: 750px) {
+
+	.tit{
+		grid-column: 1 / 4;
+	}
+
+	#buscar{
+		grid-column: 3 / 4;
+		grid-row: 1 / 2; 
+	}
+	
+	.dia, .noche, .sabado{
+		grid-column: 1 / 4;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.footer a, .footer p, .comp, .tablet, .telef{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 400px){
+	.cotlaeb{
+		display: none;
+	}
+	#buscar {
+		grid-column: 1 / 4;
+	
+	}
+	.tit{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+		justify-content: center;
+		margin-top: 10px;
+	}
+}

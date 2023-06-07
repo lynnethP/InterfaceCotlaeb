@@ -1,0 +1,450 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background: url(../../../imagenes/miFondo.png) center / cover;
+	background-attachment: fixed;
+}
+ 
+header{
+	width: 100%;
+}
+
+header nav{ 
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	background-color: #037E8C;
+}
+
+header nav ul{
+	overflow: hidden;
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px;
+	display: block;
+	display: flex;
+	align-items: center;
+}
+
+header .span{
+	margin: auto;
+	margin-right: 10px;
+	padding: 0px;
+	width: 25px;
+	display: inline-block;
+
+}
+
+header nav ul li a:hover{
+	background-color: #2EAFBA;
+}
+
+.menu_bar{
+	display: none;
+}
+
+
+.contenido{
+	width: 90%;
+	margin: auto;
+}
+
+.menu{
+	padding: 20px;
+}
+
+
+.cotlaeb img{
+	width: 80px;
+	float: left;
+}
+.cotlaeb h2{
+	color: #000;
+	font-family: Agency FB;
+	font-size: 40px;
+	text-shadow: 2px 0px 5px #08288D;
+	padding: 5%;
+}
+
+.tit{
+	font-size: 40px;
+    font-family: 'Lucida Calligraphy', cursive;
+    color: #000;
+}
+
+#buscar{
+	z-index: 5;
+}
+
+#busqueda{
+	margin: auto;
+	margin-top: 20px;
+	z-index: 5;
+	width: 60%;
+	display: none;
+	transition: all 1000ms;
+}
+
+#inputSearch{
+	outline: 0;
+	border: none;
+	padding: 10px;
+	background: none;
+	border-bottom: solid 5px #000;
+	color: #e6e6e6;
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+}
+
+::placeholder{
+	color:#e6e6e6;
+}
+
+#icono{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+#buscar input[type="image"]{
+	display: block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	outline: none;
+}
+
+#box_search{
+	background-color: #fff;
+	box-sizing: border-box;
+	z-index: 5;
+	width: 60%;
+	margin: auto;
+	display: none;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu #box_search li a{
+	text-decoration: none;
+	color: #000;
+	padding: 15px 20px;
+	display: flex;
+	align-items: center;
+	display: block;
+	margin: auto;
+}
+
+.menu #box_search li a:hover{
+	background-color: #e6e6e6;
+}
+
+#lupa{
+	width: 15px;
+	margin-right: 10px;
+}
+
+#cover_busqueda{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 4;
+	display: none;
+}
+
+
+.parteI, .parteII, .parteIII, .parteIV{
+	width: 60%;
+    margin: auto;
+}
+
+.parteI a, .parteII a, .parteIV a{
+    text-decoration: none;
+    color: #000;
+}
+
+.parteII, .parteIII, .parteIV{
+	margin-top: 30px;
+}
+
+
+.principal{
+	text-align: center;
+	background-color: #0C7F88;
+	border-bottom: solid 5px #20B3BF; 
+	border-radius: 5px 5px 0px 0px;
+	font-weight: bold;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.imagen{
+	background-color: rgba(142,224,233,0.6);
+	border-radius: 0px 0px 5px 5px;
+	border: solid .5px #0C7F88;
+	border-top: none;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.so{
+	width: 100%;
+	height: 90%;
+	
+}
+
+.puntos{
+	padding: 15px;
+	background-color: rgba(142,224,233,0.8);
+    border: solid .5px #0C7F88;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.ul{	
+	margin: 20px 20px 20px 35px;
+	text-align: justify;
+}
+
+
+.horas, .nivel, 
+.secI, .profI, .horarioI, .participI,
+.secII, .profII, .horarioII, .participII,
+.secIII, .profIII, .horarioIII, .participIII,
+.nota,
+.contenidoI, .contenidoII, .contenidoIII, 
+.contenidoIV, .contenidoV{
+	padding: 15px;
+	background-color: rgba(142,224,233,0.8);
+    border-radius: 0px 0px 5px 5px;
+    border: solid .5px #0C7F88;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.seccionII, .turnoII, .docenteII, .participantesII,
+.seccionIII, .turnoIII, .docenteIII, .participantesIII{
+	padding: 15px;
+	border-radius: 0px 0px 5px 5px;
+	border-top: none;
+	background-color: #70a5f6;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+}
+
+.horas{
+	border-radius: 0px 0px 8px 8px;
+	border-top: none;
+}
+
+.nivel{
+	border-radius: 0px 0px 8px 8px;
+	border-top: none;
+	border-left: none;
+}
+
+
+
+.puntos:hover, .horas:hover, .nivel:hover,
+.secI:hover, .profI:hover, .horarioI:hover, .participI:hover,
+.secII:hover, .profII:hover, .horarioII:hover, .participII:hover,
+.secIII:hover, .profIII:hover, .horarioIII:hover, .participIII:hover,
+.nota:hover, .contenidoI:hover, .contenidoII:hover, 
+.contenidoIII:hover, .contenidoIV:hover, .contenidoV:hover{
+    background-color: rgba(142,224,233,0.3);
+}
+
+.seccion, .turno, .docente, .participantes{
+	padding: 15px;
+	border-radius: 0px 0px 5px 5px;
+    border: solid .5px #0C7F88;
+	border-top: none;
+	background-color:#70a5f6;
+	text-align: center;
+}
+
+.nombre_curso{
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+
+
+.decide{
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #0C7F88;
+	border-bottom: solid 3px #20B3BF; 
+	border-radius: 5px 5px 0px 0px;
+}
+
+.escoge{
+	width: 100%;
+	background-color: #78D7DE;
+	padding: 10px;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 2px 2px 7px #000;
+	/*border: solid 1px #000;*/
+	border-top: none;
+}
+
+.seleccionar{
+	padding: 10px;
+	padding-bottom: 0%;
+	text-align: center;
+	border-radius: 0px 0px 5px 5px;
+	background-color: rgba(142,224,233,0.8);
+}
+
+.radio{
+	width: 100%;
+	/*background-color: red;*/
+	margin: 50px 0px 30px 0px;
+}
+
+.opt{
+	display: inline-block;
+	width: 30%;
+}
+
+input[type="radio"]{
+	margin: 8% 3%;
+}
+
+.boton{
+	margin-top: 5%;
+	width: 50%;
+	height: 30px;
+	background-color: rgba(255,0,0,0);
+	border: 0;
+	border-bottom: solid 4px /*#440EDC*/ #086482;
+	color: #000;
+	font-size: 16px;
+}
+
+.boton:hover{
+	width: 55%;
+	margin-left: 0%;
+	padding-bottom: 3%;
+	transition: all 300ms ease;
+}
+.boton:focus{
+	outline: 0;
+}
+
+
+.foot{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(138, 245, 217, 0.7);
+	padding: 10px;
+	border-top: solid 1px #000;
+}
+
+.foot a{
+	margin-left: 2%;
+}
+
+.comp{
+	width: 5%;
+	margin-left: 10%;
+}
+.tablet{
+	width: 3%;
+	margin-left: 2%;
+}
+
+.telef{
+	width: 2%;
+	margin-left: 2%;
+}
+
+
+
+.menu_fixed{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+}
+
+
+
+
+@media screen and (max-width: 870px) {
+	header nav{
+		width: 80%;
+		height: 100%;
+		left: -100%;
+		margin: 0;
+		position: fixed;
+		z-index: 1;
+	}
+
+	header nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255,.3); 
+	}
+
+	.menu_bar{
+		display: block;
+		width: 100%;
+		transition: all ease .6s;
+	}
+
+	.menu_bar .bt_menu{
+		display: block;
+		padding: 20px;
+		background-color: #037E8C;
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.menu_bar .span{
+		float: right;
+		font-size: 40px;
+	} 
+
+	.miMenu{
+		position: fixed;
+		z-index: 1000;
+		top: 68px;
+	}
+
+}

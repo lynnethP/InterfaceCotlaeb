@@ -1,0 +1,19 @@
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: 20 auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "nada tabla nada"
+						 "nada tabla nada"
+						 "footer footer";
+}
+
+
+.contenido .miTabla{
+	grid-area: tabla;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}

@@ -1,0 +1,110 @@
+
+                /*Estilos del Carrusel*/
+
+#carrusel{
+	float: left;
+	width: 605px;
+	overflow: hidden;
+	height: 360px;
+	position: relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}       
+
+        /*Flecha para retroceder*/
+
+#carrusel .atras{
+	position: absolute;
+	left: 10px;
+	z-index:1;
+    top:50%;
+  	text-decoration: none;
+	color:#000;
+    padding: 5px;
+}
+
+        /*Flecha hacia avanzar*/
+
+#carrusel .adelante {
+	position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
+#carrusel .atras:hover, #carrusel .adelante:hover{
+    background-color:rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+        /*Tamaños y propiedades cada item del carrusel*/
+
+.carrusel {
+    width:10000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+}
+ 
+.carrusel > div {
+    float: left;
+    height: 310px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+}
+ 
+.carrusel img {
+    cursor:pointer;
+    width: 195px;
+    height: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+ 
+.actividad {
+    border: rgba(0,0,0,0.3) 1px solid;
+}
+
+h5 {
+   padding-bottom: 5%;   
+}
+
+.carrusel h5 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;  
+}
+
+.carrusel p{
+    margin-top: 2%;
+    padding: 10% 20%;
+    text-align: justify;
+    box-sizing: border-box;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mod img{
+      width: 30%;
+      height: 60px;
+}
+
+
+
+@media screen and (max-width: 650px){
+    #carrusel{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #carrusel{
+        width: 200px;
+    }
+}

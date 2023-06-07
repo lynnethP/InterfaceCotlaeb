@@ -1,0 +1,854 @@
+
+		/*Estilos CSS Grid (para el posicionamiento)*/
+
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	display: grid; 
+	grid-gap: 20px;
+	grid-template-areas: "logo logo logo"
+						 "carrusel carrusel carrusel"
+						 "contenido contenido contenido"
+						 "cursos cursos cursos"
+						 "info info info"
+						 "footer footer footer";
+} 
+
+
+.contenido .logo, .contenido .car, .contenido .principal, .contenido .cursos, .contenido .info{
+	padding: 20px;
+}
+
+		/*Propiedades generales de cada seccion de la página*/
+
+.contenido .logo{
+	grid-area: logo;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
+.contenido .car{
+	grid-area: carrusel;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido .principal{
+	grid-area: contenido;
+	padding: 60px;
+}
+
+.contenido .cursos{
+	grid-area: cursos;
+}
+
+.contenido .info{
+	grid-area: info;
+}
+
+.contenido .footer{
+	grid-area: footer;
+}
+
+
+
+
+		/*Posicionamiento de la sección logo*/
+
+
+.logo .cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.logo #buscar{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo #busqueda{
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+}
+
+.logo #box_search{
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+
+
+	/*Posicionamiento de la sección principal*/
+
+.principal{
+	display: grid;
+	grid-template-areas: "software software software"
+						 "ventajas ventajas ventajas"
+						 "venezuela venezuela venezuela";
+}
+
+.software{
+	grid-area: software;
+}
+
+.vent{
+	grid-area: ventajas;
+}
+
+.ven{
+	grid-area: venezuela;
+}
+
+		/*Posicionamiento de la sección de los cursos y las áreas de capacitación*/
+
+.cursos{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+
+}
+.cur{
+	grid-column: 2 span;
+	display: grid;
+	grid-gap: 15px;
+	grid-template-areas: "titulo titulo titulo"
+						 "so ofi htmlBasico"
+						 "htmlMedio jsBasico jsMedio"
+						 "st rd si";
+	margin-left: 5%;
+}
+
+.misCursos{
+	grid-area: titulo;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.so{
+	grid-area: so;
+}
+
+.ofi{
+	grid-area: ofi;
+}
+
+.htmlBasico{
+	grid-area: htmlBasico;
+}
+
+.htmlMedio{
+	grid-area: htmlMedio;
+}
+
+.jsBasico{
+	grid-area: jsBasico;
+}
+
+.jsMedio{
+	grid-area: jsMedio;
+}
+
+.st{
+	grid-area: st;
+}
+
+.rd{
+	grid-area: rd;
+}
+
+.si{
+	grid-area: si;
+}
+
+
+
+.areas{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "tit tit"
+						 "uf soporte"
+						 "ds ar";
+}
+
+.ac{
+	grid-area: tit;
+}
+
+.uf{
+	grid-area: uf;
+	display: flex;
+	text-align: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 200px;
+}
+.soporte{
+	grid-area: soporte;
+	display: flex;
+	text-align: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 200px;
+}
+.ds{
+	grid-area: ds;
+	display: flex;
+	text-align: center;
+	text-align: center;
+	justify-content: center;
+	align-items: flex-start;
+	height: 200px;
+}
+.ar{
+	grid-area: ar;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: flex-start;
+	height: 200px;
+}
+
+
+		/*Posicionamiento de la sección de información*/
+
+.info{
+	display: grid;
+	grid-template-areas: "agregado acceso redS redS"
+						 "uno one fb tw"
+						 "dos two gm yb"
+						 "tres tree ig ws";
+	grid-gap: 10px;
+	padding: 20px 20px;
+}
+
+.agregado{
+	grid-area: agregado;
+	display: grid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.uno {
+	grid-area: uno;
+	/*margin-left: 5%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.dos{
+	grid-area: dos;
+	/*margin-left: 5%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.tres{
+	grid-area: tres;
+	/*margin-left: 5%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+}
+
+.acceso{
+	grid-area: acceso;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.one {
+	grid-area: one;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.two{
+	grid-area: two;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tree{
+	grid-area: tree;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.redes{
+	grid-area: redS;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fb{
+	grid-area: fb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tw{
+	grid-area: tw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gm{
+	grid-area: gm;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.yb{
+	grid-area: yb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ig{
+	grid-area: ig;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ws{
+	grid-area: ws;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+	/*body{
+		background: #ff8000;
+	}*/
+
+	.contenido .cur{
+		grid-column: span 3;
+	}
+	.contenido .areas{
+		grid-column: 1 / 4;
+		margin: auto;
+	}
+
+	.i-so li ul, .i-ofi li ul, .i-hb li ul, .i-hm li ul, .i-jb li ul, .i-jm li ul, .i-sp li ul, .i-rd li ul, .i-si li ul{
+		left: 20%;
+	}
+	
+
+	.info{
+		grid-template-areas: "agregado acceso"
+							 "uno one"
+							 "dos two"
+							 "tres tree"
+							 "redS redS"
+							 "fb tw"
+							 "gm yb"
+							 "ig ws";
+		grid-gap: 10px;
+		padding: 20px;
+	}	
+
+	.agregado{
+		width: 100%;
+	}
+	.acceso{
+		width: 100%;
+	}
+
+	.uno, .dos, .tres, .one, .two, .tree{
+		padding: 10px;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.redes{
+		width: 100%;
+		margin-left: 10px;
+		grid-column: 1 / 3;
+		grid-row: 5 / 6;
+		text-align: center;
+	}
+
+	.fb{
+		grid-column: 1 / 2;
+		grid-row: 6 / 7;
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 50px;
+		
+	}
+
+	.tw{
+		grid-column: 2 / 3;
+		grid-row: 6 / 7;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.gm{
+		grid-column: 1 / 2;
+		grid-row: 7 / 8;
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 50px;
+	}
+
+	.yb{
+		grid-column: 2 / 3;
+		grid-row: 7 / 8;
+		display: flex;
+		justify-content: flex-start;
+		/*margin-left: 50px;*/
+	}
+
+	.ig{
+		grid-column: 1 / 2;
+		grid-row: 8 / 9;
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 50px;
+	}
+
+	.ws{
+		grid-column: 2 / 3;
+		grid-row: 8 / 9;
+		display: flex;
+		justify-content: flex-start;
+		/*margin-left: 50px;*/
+	}
+
+	.ars, .edit{
+		margin: auto;
+	}
+
+	.edit{
+		display: flex;
+		justify-content: center;
+	}
+	.misAreas{
+		margin: auto;
+		text-align: center;
+	}
+	.usuariofinal, .adm-red, .soft, .spt{
+		width: 70%;
+	}
+
+	.footer a, .footer p, .comp, .tablet, .telef{
+		display: none;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 700px){
+	
+	.cur{
+		/*grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, 1fr);*/
+		grid-template-areas: "titulo titulo"
+							 "so ofi"
+							 "htmlBasico htmlMedio"
+							 "jsBasico jsMedio"
+							 "st rd"
+							 "si";
+	}
+
+	.misCursos{
+		grid-column: 2 / 4;
+		grid-row: 1 / 2;
+		margin: auto;
+	}
+
+	.so{
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+	}
+	.ofi{
+		grid-column:  3 / 4;
+		grid-row: 2 / 3;
+	}
+
+	.htmlBasico{
+		grid-column: 2 / 3;
+		grid-row: 3 / 4;
+	}
+	.htmlMedio{
+		grid-column: 3 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.jsBasico{
+		grid-column: 2 / 3;
+		grid-row: 4 / 5;
+	}
+	.jsMedio{
+		grid-column: 3 / 4;
+		grid-row: 4 / 5;
+	}
+
+	.st{
+		grid-column: 2 / 3;
+		grid-row: 5 / 6;
+	}
+	.rd{
+		grid-column: 3 / 4;
+		grid-row: 5 / 6;
+	}
+
+	.si{
+		grid-column: 2 / 3;
+		grid-row: 6 / 7;
+	}
+
+	.i-so li ul, .i-ofi li ul, .i-hb li ul, .i-hm li ul, .i-jb li ul, .i-jm li ul, .i-sp li ul, .i-rd li ul, .i-si li ul{
+		left: 25%;
+	}
+
+}
+
+
+
+@media screen and (max-width: 650px){
+	.info{
+		grid-template-areas: "agregado agregado"
+							 "uno uno"
+							 "dos dos"
+							 "tres tres"
+							 "acceso acceso"
+							 "one"
+							 "two"
+							 "tree"
+							 "redS redS"
+							 "fb tw"
+							 "gm yb"
+							 "ig ws";
+	}	
+
+	.agregado{
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		grid-column: 1 / 3;
+		grid-row: 1 / 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0%;
+		/*margin-left: 20px;*/
+	}
+	
+
+	.uno, .dos, .tres, .one, .two, .tree{
+		padding: 10px;
+		text-align: center;
+	}
+
+	.uno{
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0;
+
+	}
+
+	.dos{
+		grid-column: 1 / 3;
+		grid-row: 3 / 4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0;
+	}
+
+	.tres{
+		grid-column: 1 / 3;
+		grid-row: 4 / 5;
+		display: flex;
+		justify-content: center;
+		align-items: center;			
+		margin-left: 0;
+
+	}
+
+	.acceso{
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		grid-column: 1 / 3;
+		grid-row: 5 / 6;
+		margin-bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.one{
+		grid-column: 1 / 3;
+		grid-row: 6 / 7;
+	}
+
+	.two{
+		grid-column: 1 / 3;
+		grid-row: 7 / 8;
+	}
+
+	.tree{
+		grid-column: 1 / 3;
+		grid-row: 8 / 9;
+	}
+
+	.redes{
+		width: 100%;
+		margin-left: 5px;
+		grid-column: 1 / 3;
+		grid-row: 9 / 10;
+		text-align: center;
+		padding: 10px;
+		margin-bottom: 0;
+		
+	}
+
+	.fb{
+		grid-column: 1 / 2;
+		grid-row: 10 / 11;
+		display: flex;
+		justify-content: flex-end;
+		margin-left: : 20px;
+		
+	}
+
+	.tw{
+		grid-column: 2 / 3;
+		grid-row: 10 / 11;
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 30px;
+		box-sizing: border-box;
+	}
+
+	.gm{
+		grid-column: 1 / 2;
+		grid-row: 11 / 12;
+		display: flex;
+		justify-content: flex-end;
+		margin-left: 20px;
+	}
+
+	.yb{
+		grid-column: 2 / 3;
+		grid-row: 11 / 12;
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 30px;
+		box-sizing: border-box;
+	}
+
+	.ig{
+		grid-column: 1 / 2;
+		grid-row: 12 / 13;
+		display: flex;
+		justify-content: flex-end;
+		margin-left: 20px;
+	}
+
+	.ws{
+		grid-column: 2 / 3;
+		grid-row: 12 / 13;
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 30px;
+		box-sizing: border-box;
+	}
+
+	/*#carrusel{
+		width: 400px;
+	}*/
+}
+
+
+
+
+@media screen and (max-width: 600px){
+	.cur{
+		grid-template-areas: "titulo"
+							 "so"
+							 "ofi"
+							 "htmlBasico"
+							 "htmlMedio"
+							 "jsBasico"
+							 "jsMedio"
+							 "st"
+							 "rd"
+							 "si";
+
+	}
+
+	.misCursos{
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		width: 20%;
+		height: 60%;
+
+	}
+	.so{
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+	.ofi{
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+
+	.htmlBasico{
+		grid-column: 1 / 2;
+		grid-row: 4 / 5;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+	.htmlMedio{
+		grid-column: 1 / 2;
+		grid-row: 5 / 6;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+
+	.jsBasico{
+		grid-column: 1 / 2;
+		grid-row: 6 / 7;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+	.jsMedio{
+		grid-column: 1 / 2;
+		grid-row: 7 / 8;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+
+	.st{
+		grid-column: 1 / 2;
+		grid-row: 8 / 9;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+	.rd{
+		grid-column: 1 / 2;
+		grid-row: 9 / 10;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+
+	.si{
+		grid-column: 1 / 2;
+		grid-row: 10 / 11;
+		width: 60%;
+		height: 60%;
+		margin: auto;
+	}
+
+	.sistemaO, .ofimatica, .htmlB, .htmlM, .jsB, .jsM, .sop, .red, .seg{
+		width: 250px;
+		padding: 0;
+	}
+
+	.tituloSO, .tituloOfi, .tituloHB, .tituloHM, .tituloJB, .tituloJM, .tituloSop, .tituloRed, .tituloSeg{
+		margin: auto;
+		/*width: 250px;*/
+	}
+
+	.i-so li ul, .i-ofi li ul, .i-hb li ul, .i-hm li ul, .i-jb li ul, .i-jm li ul, .i-sp li ul, .i-rd li ul, .i-si li ul{
+		left: 25%;
+	}
+
+	
+
+	
+
+	.ars, .edit{
+		margin: auto;
+	}
+
+	.edit{
+		display: flex;
+		justify-content: center;
+	}
+
+	.sistemaO, .ofimatica, .htmlB, .htmlM, .jsB, .jsM, .sop, .red, .seg{
+		width: 90%;
+	}
+
+	.ac{
+	 	width: 100%;
+	}
+
+	/*#carrusel{
+		margin: 200px;
+	}*/
+	
+}
+
+
+@media screen and (max-width: 500px){
+	.logo .cotlaeb{
+		display: none;
+	}
+	.logo #buscar{
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

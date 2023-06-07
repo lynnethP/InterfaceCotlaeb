@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="../imagenes/pnf.ico">
+	<link rel="stylesheet" type="text/css" href="registro.css">
+	<link rel="stylesheet" type="text/css" href="registro-grid.css">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+<body>
+
+	<div class="contenedor">
+		<div class="menu">
+			<div class="cotlaeb">
+				<img src="../imagenes/logo.png">
+				<h2>Cotlaeb</h2>
+			</div>
+			
+			<div class="sesi">
+					<img class="inicio" src="../imagenes/usuario.png">
+					<a href="../Login/login.html">Inicia Sesión</a>
+			</div>
+		</div>
+
+		<div class="form">
+			<form id="formulario" class="formulario" name="login" action="../Usuario/usuario.html" method="post" onsubmit="return validar()">
+				<img class="imagen" src="../imagenes/admin.png">
+				<h2>Registro</h2>
+				
+				<div>
+					<label>Nombre</label>
+					<input class="inp" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+				</div>
+				<div>
+					<label>Apellido</label>
+					<input class="inp" type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+				</div>
+				<div>
+					<label>Correo</label>
+					<input class="inp" type="email" name="correo" id="correo" placeholder="Ingresa tu correo">
+				</div>
+				<div>
+					<label>Nombre de Usuario</label>
+					<input class="inp" type="text" name="usuario" id="usuario" placeholder="Ingresa tu usuario">
+				</div>
+				<div>
+					<label>Contraseña</label>
+					<input class="inp" type="password" name="password" id="clave" placeholder="Escribe tu contraseña">
+				</div>
+				<div>
+					<label>Confirma tu contraseña</label>
+					<input class="inp" type="password" name="password" id="clave_dos" placeholder="Escribe tu contraseña nuevamente">
+				</div>
+					<div id="olvido">
+						<a href="login.html" class="cont">¿Ya tienes una cuenta?</a>
+					</div>
+						
+					<input class="boton" type="submit" name="" value="Acceder">
+					
+
+			</form>
+		</div>
+		<div class="footer">
+			<footer  class="foot">&copy; Todos los derechos reservados. Lynneth Pereira - 2020  <a href="#">lynnethpereira12@gmail.com</a>
+				<img class="comp" src="../imagenes/comp.png">
+				<img class="tablet" src="../imagenes/tablet.png">
+				<img class="telef" src="../imagenes/telef.png">
+			</footer>
+		</div>
+	</div>
+
+	<script src="registro.js"></script>
+
+</body>
+</html>

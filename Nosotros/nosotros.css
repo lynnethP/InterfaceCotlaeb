@@ -1,0 +1,183 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    min-height: 100vh;
+    background: url(../imagenes/miFondo.png) center / cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.contenedor{
+    width: 1000px;
+}
+
+.menu{
+    padding: 0px 20px;
+}
+
+.cotlaeb img{
+    width: 80px;
+    float: left;
+}
+.cotlaeb h2{
+    color: #000;
+    font-family: Agency FB;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 2px 0px 5px #08288D;
+    padding: 5%;
+    margin-top: 25px;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Lucida Calligraphy', cursive;
+    color: #000;
+}
+
+.reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0%;
+}
+.reg a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0);
+    border: solid 1px #000;
+    box-shadow: 2px 1px 5px 0.5px #000;
+    padding: 10px;
+    padding-left: 38px;
+    width: 120px;
+}
+.reg a:hover{
+    background-color: none;
+    background-color: rgba(0,0,0,0.15);
+}
+.regresar{
+    position: relative;
+    width: 50px;
+    margin-right: -35px;
+}
+
+
+.subtitulo {
+    margin: 0;
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(0,0,0,1);
+    display: inline;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.texto { 
+    color: /*#00FFEA;*/ #fff;
+    /* margin: 0px 30px;*/
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,1);
+    font-family: 'Liberation Sans Narrow', cursive;
+    margin-top: 0;
+}
+
+ul li{
+    list-style-image: url(../imagenes/ok.png);
+    color: #00FFEA;
+    margin: 5px 30px;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+    font-family: 'Liberation Sans Narrow', cursive;
+}
+
+.vin{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.linea-division {
+   width: 80%;
+    height: 2px;
+    background-color: rgba(255,255,255,0.6);
+    /*margin-bottom: 5%;*/
+}
+
+.carousel{
+    min-height: 340px;
+}
+
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 300px;
+    height: 340px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 3%;
+}
+
+.carousel .indicators .indicator-item{
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 10px;
+     background-color: #20B3BF;
+   /* background-color: #242424;*/
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(138, 245, 217, 0.7);
+    padding: 10px;
+    border-top: solid 1px #000;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    color: #000;
+}
+
+.footer a{
+    margin-left: 2%;
+    text-decoration: underline;
+    color: #0C0FF9;
+}
+
+.comp{
+    width: 5%;
+    margin-left: 10%;
+}
+.tablet{
+    width: 3%;
+    margin-left: 2%;
+}
+
+.telef{
+    width: 2%;
+    margin-left: 2%;
+}

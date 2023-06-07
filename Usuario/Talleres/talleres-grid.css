@@ -1,0 +1,199 @@
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "tabla tabla tabla"
+						 "footer footer footer";
+}
+
+
+.menu{
+	grid-area: menu;
+	display: grid;
+	/*grid-gap: 20px;*/
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tit{
+	grid-column: 2 / 3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.menu #buscar{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu #busqueda{
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+}
+
+.menu #box_search{
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+
+.contenido .miTabla{
+	grid-area: tabla;
+}
+
+.parteI, .parteII, .parteIII{
+	display: grid;
+	grid-template-areas: "principal principal mod"
+						 "imagen puntos mod"
+						 "facilitador lugar mod"
+						 "fecha hora mod";
+}
+
+
+#mod{
+	grid-area: mod;
+}
+.principal{
+	grid-area: principal;
+}
+
+.imagen{
+	grid-area: imagen;
+}
+.puntos{
+	grid-area: puntos;
+}
+.facilitador{
+	grid-area: facilitador;
+}
+.lugar{
+	grid-area: lugar;
+}
+.fecha{
+	grid-area: fecha;
+}
+.hora{
+	grid-area: hora;
+}
+
+
+
+.footer{
+	grid-area: footer;
+}
+
+
+
+@media screen and (max-width: 700px){
+	.tit{
+        grid-column: 1 / 4;
+        margin: 0px;
+    }
+
+     #buscar{
+        grid-row: 1 / 2; 
+    }
+
+    .menu #busqueda{
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.menu #box_search{
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}
+
+    #mod{
+    	grid-column: 1 / 4;
+    	grid-row: 5 / 6;
+    	width: 100px;
+    	margin: auto;
+    }
+    #mod img{
+      width: 35%;
+      margin: 10px auto;
+      display: inline;
+}
+
+}
+
+@media screen and (max-width: 600px){
+	
+	.principal{
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+	}
+
+	.imagen{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+	}
+
+	.puntos{
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+		border-left: solid .5px #0C7F88;
+	}
+
+	.facilitador{
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}
+	.lugar{
+		grid-column: 1 / 4;
+		grid-row: 5 / 6;
+		border-left: solid .5px #0C7F88;
+	}
+	.fecha{
+		grid-column: 1 / 4;
+		grid-row: 6 / 7;
+	}
+	.hora{
+		grid-column: 1 / 4;
+		grid-row: 7 / 8;
+		border-left: solid .5px #0C7F88;
+	}
+
+	#mod{
+		grid-row: 8 / 9;
+	}
+
+	
+	.footer a, .footer p, .comp, .tablet, .telef{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.cotlaeb{
+		display: none;
+	}
+	.menu #buscar {
+		grid-column: 1 / 4;
+		margin-bottom: 20px;
+	
+	}
+
+	.tit{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+		justify-content: center;
+	}
+}

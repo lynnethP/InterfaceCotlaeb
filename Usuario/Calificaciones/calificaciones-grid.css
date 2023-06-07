@@ -1,0 +1,449 @@
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto; 
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "tabla tabla tabla"
+						 "footer footer footer";
+}
+
+
+.menu{
+	grid-area: menu;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tit{
+	grid-column: 2 / 3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu #buscar{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu #busqueda{
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+}
+
+.menu #box_search{
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+
+
+.contenido .miTabla{
+	grid-area: tabla;
+}
+
+.parteI, .parteII, .parteIII{
+	display: grid;
+	grid-template-areas: "principal principal principal"
+						 "imagen puntos puntos"
+						 "unidad calificaciones estado"
+						 "contenidoI notaI completadoI"
+						 "contenidoII notaII completadoII"
+						 "contenidoIII notaIII completadoIII"
+						 "contenidoIV notaIV completadoIV"
+						 "contenidoV notaV completadoV"
+						 "contenidoVI notaVI completadoVI"
+						 "contenidoVII notaVII completadoVII"
+						 "progreso progreso progreso";
+}
+
+
+.principal{
+	grid-area: principal;
+}
+
+.imagen{
+	grid-area: imagen;
+}
+.puntos{
+	grid-area: puntos;
+}
+.unidad{
+	grid-area: unidad;
+}
+
+.calificaciones{
+	grid-area: calificaciones;
+}
+
+.estado{
+	grid-area: estado;
+}
+
+.contenidoI{
+	grid-area: contenidoI;
+}
+
+.notaI{
+	grid-area: notaI;
+}
+
+.completadoI{
+	grid-area: completadoI;
+}
+
+/*.contenidoII{
+	grid-area: contenidoII;
+}
+
+.notaII{
+	grid-area: notaII;
+}
+
+.completadoII{
+	grid-area: completadoII;
+}*/
+
+.progreso{
+	grid-area: progreso;
+}
+
+
+
+.footer{
+	grid-area: footer;
+}
+
+
+@media screen and (max-width: 700px){
+	.tit{
+        grid-column: 1 / 4;
+    }
+
+     #buscar{
+        grid-row: 1 / 2;
+    }
+
+    .menu #busqueda{
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.menu #box_search{
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}
+
+}
+
+
+@media screen and (max-width: 600px){
+	
+	.principal{
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+	}
+
+	.imagen{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+	}
+
+	.html, .soporte, .redes{
+		width: 50%;
+		height: 90px;
+	}
+	.puntos{
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+		border-left: solid .5px #0C7F88;
+	/*	padding: 0px;*/
+	}
+
+	.parteI .unidad, .parteII .unidad, .parteIII .unidad{
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}
+
+	.parteI .contenidoI, .parteII .contenidoI, .parteIII .contenidoI{
+		grid-column: 1 / 4;
+		grid-row: 5 / 6;
+	}
+
+	.parteI .calificaciones, .parteII .calificaciones, .parteIII .calificaciones{
+		grid-column: 1 / 4;
+		grid-row: 6 / 7;
+	}
+
+	.parteI .notaI, .parteII .notaI, .parteIII .notaI{
+		grid-column: 1 / 4;
+		grid-row: 7 / 8;
+	}
+
+	.parteI .estado, .parteII .estado, .parteIII .estado{
+		grid-column: 1 / 4;
+		grid-row: 8 / 9;
+	}
+
+	.parteI .estadoI{
+		grid-column: 1 / 4;
+		grid-row: 9 / 10;
+	}
+
+	.parteI .completadoI, .parteII .completadoI, .parteIII .completadoI{
+		grid-column: 1 / 4;
+		grid-row: 10 / 11;
+	}
+
+	.parteI .unidadII, .parteII .unidadII, .parteIII .unidadII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 11 / 12;
+	}
+
+	.parteI .contenidoII, .parteII .contenidoII, .parteIII .contenidoII{
+		grid-column: 1 / 4;
+		grid-row: 12 / 13;
+	}
+
+	.parteI .calificacionesII, .parteII .calificacionesII, .parteIII .calificacionesII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 13 / 14;
+	}
+
+	.parteI .notaII, .parteII .notaII, .parteIII .notaII{
+		grid-column: 1 / 4;
+		grid-row: 14 / 15;
+	}
+
+	.parteI .estadoII, .parteII .estadoII, .parteIII .estadoII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 15 / 16;
+	}
+
+	.parteI .completadoII, .parteII .completadoII, .parteIII .completadoII{
+		grid-column: 1 / 4;
+		grid-row: 16 / 17;
+	}
+
+	.parteI .unidadIII, .parteII .unidadIII, .parteIII .unidadIII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 17 / 18;
+	}
+
+	.parteI .contenidoIII, .parteII .contenidoIII, .parteIII .contenidoIII{
+		grid-column: 1 / 4;
+		grid-row: 18 / 19;
+	}
+
+	.parteI .calificacionesIII, .parteII .calificacionesIII, .parteIII .calificacionesIII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 19 / 20;
+	}
+
+	.parteI .notaIII, .parteII .notaIII, .parteIII .notaIII{
+		grid-column: 1 / 4;
+		grid-row: 20 / 21;
+	}
+
+	.parteI .estadoIII, .parteII .estadoIII, .parteIII .estadoIII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 21 / 22;
+	}
+
+	.parteI .completadoIII, .parteII .completadoIII, .parteIII .completadoIII{
+		grid-column: 1 / 4;
+		grid-row: 22 / 23;
+	}
+
+	.parteI .unidadIV, .parteII .unidadIV, .parteIII .unidadIV{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 23 / 24;
+	}
+
+	.parteI .contenidoIV, .parteII .contenidoIV, .parteIII .contenidoIV{
+		grid-column: 1 / 4;
+		grid-row: 24 / 25;
+	}
+
+	.parteI .calificacionesIV, .parteII .calificacionesIV, .parteIII .calificacionesIV{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 25 / 26;
+	}
+
+	.parteI .notaIV, .parteII .notaIV, .parteIII .notaIV{
+		grid-column: 1 / 4;
+		grid-row: 26 / 27;
+	}
+
+	.parteI .estadoIV, .parteII .estadoIV, .parteIII .estadoIV{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 27 / 28;
+	}
+
+	.parteI .completadoIV, .parteII .completadoIV, .parteIII .completadoIV{
+		grid-column: 1 / 4;
+		grid-row: 28 / 29;
+	}
+
+	.parteI .unidadV, .parteII .unidadV, .parteIII .unidadV{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 29 / 30;
+	}
+
+	.parteI .contenidoV, .parteII .contenidoV, .parteIII .contenidoV{
+		grid-column: 1 / 4;
+		grid-row: 30 / 31;
+	}
+
+	.parteI .calificacionesV, .parteII .calificacionesV, .parteIII .calificacionesV{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 31 / 32;
+	}
+
+	.parteI .notaV, .parteII .notaV, .parteIII .notaV{
+		grid-column: 1 / 4;
+		grid-row: 32 / 33;
+	}
+
+	.parteI .estadoV, .parteII .estadoV, .parteIII .estadoV{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 33 / 34;
+	}
+
+	.parteI .completadoV, .parteII .completadoV, .parteIII .completadoV{
+		grid-column: 1 / 4;
+		grid-row: 34 / 35;
+	}
+
+	.parteII .unidadVI, .parteIII .unidadVI{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 35 / 36;
+	}
+
+	.parteII .contenidoVI, .parteIII .contenidoVI{
+		grid-column: 1 / 4;
+		grid-row: 36 / 37;
+	}
+
+	.parteII .calificacionesVI, .parteIII .calificacionesVI{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 37 / 38;
+	}
+
+	.parteII .notaVI, .parteIII .notaVI{
+		grid-column: 1 / 4;
+		grid-row: 38 / 39;
+	}
+
+	.parteII .estadoVI, .parteIII .estadoVI{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 39 / 40;
+	}
+
+	.parteII .completadoVI, .parteIII .completadoVI{
+		grid-column: 1 / 4;
+		grid-row: 40 / 41;
+	}
+
+	.parteIII .unidadVII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 41 / 42;
+	}
+
+	.parteIII .contenidoVII{
+		grid-column: 1 / 4;
+		grid-row: 42 / 43;
+	}
+
+	.parteIII .calificacionesVII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 43 / 44;
+	}
+
+	.parteIII .notaVII{
+		grid-column: 1 / 4;
+		grid-row: 44 / 45;
+	}
+
+	.parteIII .estadoVII{
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 45 / 46;
+	}
+
+	.parteIII .completadoVII{
+		grid-column: 1 / 4;
+		grid-row: 46 / 47;	
+	}
+
+
+	.parteI .progreso{
+		grid-row: 35 / 36;
+	}
+
+	.parteII .progreso{
+		grid-row: 41 / 42;
+	}
+
+	.parteIII .progreso{
+		grid-row: 47 / 48;	
+	}
+
+	.unidad, .calificaciones, .estado{
+		padding: 0px;
+	}
+	
+	
+	.footer a, .footer p, .comp, .tablet, .telef{
+		display: none;
+	}
+
+}
+
+
+
+@media screen and (max-width: 400px){
+	.cotlaeb{
+		display: none;
+	}
+	.menu #buscar {
+		grid-column: 1 / 4;
+		margin-top: 20px;
+	
+	}
+	.tit{
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+		justify-content: center;
+	}
+}

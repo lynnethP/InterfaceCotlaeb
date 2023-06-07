@@ -1,0 +1,564 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: url(../imagenes/miFondo.png) center / cover;
+	background-attachment: fixed;
+}
+
+header{
+	width: 100%;
+
+}
+
+header nav{
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	background-color: #037E8C;
+}
+
+header nav ul{
+	overflow: hidden;
+	list-style: none;
+	
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px;
+	display: block;
+	display: flex;
+	align-items: center;
+}
+
+header .span{
+	margin: auto;
+	margin-right: 10px;
+	padding: 0px;
+	width: 25px;
+	display: inline-block;
+
+}
+
+header nav ul li a:hover{
+	background-color: #2EAFBA;
+}
+
+.menu_bar{
+	display: none;
+}
+
+
+.contenido{
+	width: 90%;
+	margin: auto;
+}
+
+
+.cotlaeb img{
+	width: 80px;
+	float: left;
+	
+}
+
+
+.cotlaeb a{
+	text-decoration: none;
+	color: #000;
+	font-family: Agency FB;
+	font-size: 40px;
+	text-shadow: -4px 0px 5px #000;
+	margin: 3% 1%;
+}
+
+
+
+#buscar{
+	z-index: 5;
+}
+
+#busqueda{
+	margin: auto;
+	margin-top: 20px;
+	z-index: 5;
+	width: 60%;
+	display: none;
+	transition: all 1000ms;
+}
+
+#inputSearch{
+	outline: 0;
+	border: none;
+	padding: 10px;
+	background: none;
+	border-bottom: solid 5px #000;
+	color: #e6e6e6;
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+}
+
+::placeholder{
+	color:#e6e6e6;
+}
+
+#icono{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+#buscar input[type="image"]{
+	display: block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	outline: none;
+}
+
+#box_search{
+	background-color: #fff;
+	box-sizing: border-box;
+	z-index: 5;
+	width: 60%;/**/
+	margin: auto;
+	display: none;
+}
+
+.logo ul{
+	list-style: none;
+}
+
+.logo #box_search li a{
+	text-decoration: none;
+	color: #000;
+	padding: 15px 20px;
+	display: flex;
+	align-items: center;
+	display: block;
+	margin: auto;
+}
+
+.logo #box_search li a:hover{
+	background-color: #e6e6e6;
+}
+
+#lupa{
+	width: 15px;
+	margin-right: 10px;
+}
+
+#cover_busqueda{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 4;
+	display: none;
+}
+
+
+
+
+
+.tit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.tit h2{
+	text-align: center;
+	padding: 10px;
+	width: 70%;
+	margin-left: 10%;
+	display: inline-block;
+}
+.tit a{
+	width: 50px;
+	text-decoration: none;
+	color: #000;
+	padding: 10px; 
+	background-color: #7896F6;
+	border-radius: 10px;
+	box-shadow: 3px 2px 10px .5px rgba(0,0,0,1);
+	font-family: Bell MT;
+	font-size: 16px;
+	
+}
+
+.tit a:hover{
+	background-color: #242424;
+	color: #fff;
+	transition: all 1s ease;
+}
+
+.principal h3{
+ 	text-align: center;
+ }
+.principal{
+	text-align: justify;
+}
+.definicion, .ventajas, .venezuela{
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.sl{
+	float: right;
+	width: 80px;
+	margin-top: 5%;
+}
+
+
+.imgV{
+	float: left;
+	width: 20%;
+	margin: 0% 3% 0% 10%;
+}
+.vent, .ven{
+	margin-top: 5%;
+
+}
+.venez{
+	width: 25%;
+	margin-top: 3%;
+	float: left;
+	margin-right: 3%;
+	margin-left: 10%;
+}
+
+
+.misCursos{
+	padding: 20px;
+	font-weight: bold;
+	font-family: Lucida Calligraphy;
+	font-size: 25px;
+}
+
+.insSO, .insOfi, .insHB, .insHM, .insJB, .insJM, .insSp, .insRd, .insSi{
+	box-shadow: 2px 1px 5px 0.5px #e6e6e6;
+	border-radius: 3px;
+	padding: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.sistemaO, .ofimatica, .htmlB, .jsB, .jsM, .sop, .red, .seg{
+	width: 100%;
+	height: 100px;
+}
+
+ .htmlM{
+ 	width: 60%;
+ 	height: 100px;
+ }
+ 
+
+
+.tituloSO a, .tituloOfi a, .tituloHB a, .tituloHM a, .tituloJB a, .tituloJM a, .tituloSop a, .tituloRed a, .tituloSeg a{
+	text-decoration: none;
+	color: #000;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;	
+	font-family: Agency FB;
+	font-size: 15px;
+	padding: 10px;
+	margin-top: 5%;
+}
+
+.tituloHM{
+	padding-top: 0%;
+}
+
+.insSO, .insOfi, .insHB, .insHM, .insJB, .insJM, .insSp, .insRd, .insSi{
+	display: inline-block;
+	position: relative;
+}
+
+
+
+.i-so li, .i-ofi li, .i-hb li, .i-hm li, .i-jb li, .i-jm li, .i-sp li, .i-rd li , .i-si li{
+	list-style: none;
+}
+
+
+.agg li a{
+	width: 100%;	
+}
+
+.agg img{
+    width: 30%;
+}
+
+
+.i-so li ul, .i-ofi li ul, .i-hb li ul, .i-hm li ul, .i-jb li ul, .i-jm li ul, .i-sp li ul, .i-rd li ul, .i-si li ul{
+	position: absolute;
+	display: none;
+	left: 13%;
+	top: 30%;
+}
+
+
+
+.i-so li:hover > ul, 
+.i-ofi li:hover > ul,  
+.i-hb li:hover > ul, 
+.i-hm li:hover > ul, 
+.i-jb li:hover > ul, 
+.i-jm li:hover > ul,
+.i-sp li:hover > ul,
+.i-rd li:hover > ul,
+.i-si li:hover > ul{
+	display: block;
+}
+
+
+.uf, .soporte, .ds, .ar{
+	display: inline-block;
+	position: relative;
+}
+.a-uf li, .soporte li, .ds li, .ar li{
+	list-style: none;
+}
+
+.misAreas{
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+
+
+.edit{
+	width: 100px;
+	margin-left: 100px;
+	text-decoration: none;
+	color: #000;
+	padding: 10px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	background-color: #7896F6;
+	box-shadow: 3px 2px 10px .5px rgba(0,0,0,1);
+	border-radius: 10px;
+}
+
+.edit:hover{
+	background-color: #242424;
+	color: #fff;
+	transition: all 1s ease;
+
+}
+
+.misAreas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+}
+
+.misAreas li a{
+	background-color: rgba(51,69,233,0.3);
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	border-left: solid 5px aqua;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 12px;
+	font-family: Lucida Calligraphy;
+	box-shadow: 2px 0px 10px 0px #000;
+	border-radius: 0px 5px 5px 0px;
+}
+
+
+.ars{
+	width: 280px;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+.usuariofinal, .adm-red{
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.spt{
+	width: 90%;
+	height: 150px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.soft{
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.info{
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 10px;
+	margin: 20px;
+	box-sizing: border-box;
+	font-family: Agency FB;
+}
+
+.agregado, .acceso, .redes{
+	font-size: 20px;	
+	color: #fff;
+	margin-bottom: 5%;
+}
+
+.uno a, .dos a, .tres a, .one a, .two a, .tree a, .fb a, .tw a, .gm a, .yb a, .ig a, .ws a{
+	text-decoration: none;
+	color: #000;
+}
+
+.uno, .dos, .tres, .one, .two, .tree{
+	font-size: 18px;
+}
+
+.uno:hover, .dos:hover, .tres:hover, .one:hover, .two:hover, .tree:hover{
+	background-color: rgba(0,0,0,0.1);
+	padding: 5px;
+	box-sizing: border-box;
+
+}
+
+
+#fb, #tw, #gm, #yb, #ig, #ws{
+	width: 30px;
+}
+
+ul.ok{
+	list-style-image:url(../imagenes/ok2.png);
+	float: left;
+	margin-left: 10%;
+}
+
+
+.footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(138, 245, 217, 0.7);
+	padding: 10px;
+	border-top: solid 1px #000;
+	font-family: 'Times New Roman';
+	font-size: 14px;
+	color: #000;
+}
+
+.footer a{
+	margin-left: 2%;
+	text-decoration: underline;
+    color: #0C0FF9;
+}
+
+.comp{
+	width: 5%;
+	margin-left: 10%;
+}
+.tablet{
+	width: 3%;
+	margin-left: 2%;
+}
+
+.telef{
+	width: 2%;
+	margin-left: 2%;
+}
+
+
+.menu_fixed{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+}
+
+
+
+@media screen and (max-width: 850px) {
+	header nav{
+		width: 80%;
+		height: 100%;
+		left: -100%;
+		margin: 0;
+		position: fixed;
+		z-index: 1;
+	}
+
+	header nav ul{
+		width: 100%;
+	}
+
+	header nav ul li{
+		display: block;
+		
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255,.3); 
+	}
+
+	.menu_bar{
+		display: block;
+		width: 100%;
+		transition: all ease .6s;
+	}
+
+	.menu_bar .bt_menu{
+		display: block;
+		padding: 20px;
+		background-color: #037E8C;
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.menu_bar .span{
+		float: right;
+		font-size: 40px;
+	}
+	.regresar{
+		z-index: 0;
+	}
+
+	.miMenu{
+		position: fixed;
+		z-index: 1000;
+		top: 68px;
+	}
+
+
+
+}

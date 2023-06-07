@@ -1,0 +1,42 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background: url(../imagenes/miFondo.png) center / cover;
+	background-attachment: fixed;
+}
+
+
+
+
+
+.foot{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(138, 245, 217, 0.7);
+	padding: 10px;
+	border-top: solid 1px #000;
+}
+
+.foot a{
+	margin-left: 2%;
+}
+
+.comp{
+	width: 5%;
+	margin-left: 10%;
+}
+.tablet{
+	width: 3%;
+	margin-left: 2%;
+}
+
+.telef{
+	width: 2%;
+	margin-left: 2%;
+}
+

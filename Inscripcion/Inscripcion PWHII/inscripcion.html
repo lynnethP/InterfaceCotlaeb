@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inscripcion Programación Web en HTML II</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../imagenes/pnf.ico">
+	<link rel="stylesheet" type="text/css" href="inscripcion.css">
+	<link rel="stylesheet" type="text/css" href="inscripcion-grid.css">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+	<script type="text/javascript" src="../../js/jquery-3.5.1.min.js"></script>
+	
+</head>
+<body>
+
+	<div class="contenido">
+		<div class="menu">
+			<div class="cotlaeb">
+				<img src="../../imagenes/logo.png">
+				<h2>Cotlaeb</h2>
+			</div>
+			
+			<div class="reg">
+				<img class="regresar" src="../../imagenes/regreso.png">
+				<a href="../../Usuario/usuario.html">Regresar</a>
+			</div>
+		</div>
+
+
+		<div class="miTabla">
+			<table id="tab-uno" rules="all">
+				<tr>
+					<td rowspan="4" class="img"><img src="../../imagenes/htmlM.png"></td>
+					<td class="titulo">Curso</td>
+				</tr>
+				<tr>
+					<td class="tabla">Programación Wen en HTML:<br> Aprenderás todo lo relacionado con el manejo de herramientas de oficina, específicamente en el área de LibreOffice</td>
+				</tr>
+				<tr>
+					<td class="tabla">Horas: 40</td>
+				</tr>
+				<tr>
+					<td class="tabla">Nivel: Medio</td>
+				</tr>
+			</table>
+
+			<table id="tab-dos" rules="all">
+				<tr><td colspan="4" class="titulo">Horarios Disponibles</td></tr>
+				<tr>
+					<td class="subtitulo">Secciones</td>
+					<td class="subtitulo">Turno</td>
+					<td class="subtitulo">Docentes</td>
+					<td class="subtitulo">Cant. de Participantes</td>
+				</tr>
+
+				<tr>
+					<td class="tabla">PWHII-01</td>
+					<td class="tabla">Diurno</td>
+					<td class="tabla">Ing. Gloria Castillo</td>
+					<td class="tabla" id="cant_pwhii_uno">7</td>
+				</tr>
+
+				<tr>
+					<td class="tabla">PWHII-02</td>
+					<td class="tabla">Nocturno</td>
+					<td class="tabla">Ing. Sol Hernández</td>
+					<td class="tabla" id="cant_pwhii_dos">10</td>
+				</tr>
+
+				<tr>
+					<td class="tabla">PWHII-03</td>
+					<td class="tabla">Sabatino</td>
+					<td class="tabla">Ing. Ligia Durán</td>
+					<td class="tabla" id="cant_pwhii_tres">8</td>
+				</tr>
+
+				<tr><td colspan="4" class="tabla">Nota: La capacidad máxima por cada turno es de 10 estudiantes</td>
+			</table>
+
+			<table  id="tab-tres" rules="all">
+				<tr>
+					<td class="titulo">Contenidos</td>
+				</tr>
+				<tr>
+					<td class="tabla">Unidad I - ¿Qué es CSS?</td>
+				</tr>	
+				<tr>
+					<td class="tabla">Unidad II - ¿Cómo enlazar un docmento HTML con una hoja de estilos CSS?</td>
+				</tr>	
+				<tr>
+					<td class="tabla">Unidad III - HTML5 y CSS3. Nuevas etiquetas</td>
+				</tr>
+				<tr>
+					<td class="tabla">Unidad IV - Dándole estilos a Mi primera página web</td>
+				</tr>
+				<tr>
+					<td class="tabla">Unidad V - Guía de Ejercicios</td>
+				</tr>
+
+			</table>
+
+			
+			<div id="cuatro">
+				<div class="decide">¡Tú decides!</div>
+				<div class="seleccionar">
+					<form name="ins" id="formulario" action="../../Usuario/usuario.html">
+					<label>Escoge el horario: </label>
+						<div class="radio">
+						<input type="radio" name="turno" id="diurno" value="diurno">Diurno
+							<input type="radio" name="turno" id="nocturno" value="nocturno">Nocturno
+							<input type="radio" name="turno" id="sabatino" value="sabatino">Sabatino
+							<input class="boton" type="submit" id="inscribir" name="inscribir" value="Inscribirme">
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="footer">
+			<footer  class="foot">&copy; Todos los derechos reservados. Lynneth Pereira - 2020  <a href="#">lynnethpereira12@gmail.com</a>
+				<img class="comp" src="../../imagenes/comp.png">
+				<img class="tablet" src="../../imagenes/tablet.png">
+				<img class="telef" src="../../imagenes/telef.png">
+			</footer>
+		</div>
+
+	</div>
+
+	<script src="inscripcion.js"></script>
+</body>
+</html>

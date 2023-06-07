@@ -1,0 +1,179 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background: url(../../imagenes/miFondo.png) center / cover;
+	background-attachment: fixed;
+}
+
+
+ul{
+	margin-left: 25px;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+
+
+.menu{
+	padding: 20px;
+}
+
+.cotlaeb img{
+	width: 80px;
+	float: left;
+}
+.cotlaeb h2{
+	color: #000;
+	font-family: Agency FB;
+	font-size: 40px;
+	text-shadow: 2px 0px 5px #08288D;
+	padding: 4%;
+	margin-top: 0px;
+}
+
+.tit{
+	font-size: 25px;
+    font-family: 'Lucida Calligraphy', cursive;
+    /*margin-bottom: 40px;*/
+    color: #000;
+}
+
+.reg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5% 0%;
+}
+.reg a{
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	border-radius: 20px;
+	background-color: rgba(0,0,0,0);
+	border: solid 1px #000;
+	box-shadow: 2px 1px 5px 0.5px #000;
+	padding: 10px;
+    padding: 12px 5px 12px 35px;
+    /*padding-left: 35px;*/
+    width: 80px;
+}
+.reg a:hover{
+	background-color: none;
+	background-color: rgba(0,0,0,0.15);
+}
+.regresar{
+	position: relative;
+	width: 49px;
+	margin-right: -36px;
+}
+
+
+table{
+	border-collapse: collapse;
+}
+
+table td{
+	padding: 10px;
+	/*border: 1px solid #000;*/
+	text-align: center;
+	border-color: /*#20B3BF*/ #0C7F88;
+}
+
+
+
+#tab-uno, #tab-dos, #tab-tres, #cuatro{
+	width: 60%;
+	margin: 3% 15%;
+}
+
+.tabla{
+	width: 25%;
+	background-color: rgba(142,224,233,0.8) /*#32BAC9*/;
+	border-radius: 0px 0px 5px 5px;
+}
+
+table .tabla:hover{
+	background-color: /*rgba(0,0,0,0.1)*/ /*#0533865c*/ rgba(142,224,233,0.3);
+}
+
+.img{
+	width: 25%;
+	background-color: /*rgba(0,0,0,0.2)*/ /*#3864aa8f*/ rgba(142,224,233,0.6);
+	border-radius: 5px 5px 5px 5px;
+	padding: 0%;
+	margin: 0%;
+}
+/*.img img{
+	width: 80%;
+	height: 50%;
+}*/
+
+.tic{
+	width: 100%;
+	height: 50%;
+	padding: 3%;
+	box-sizing: border-box;
+}
+
+.tics{
+	width: 100%;
+	height: 40%;
+	padding: 3%;
+	box-sizing: border-box;
+}
+
+
+.sob{
+	width: 100%;
+	height: 65%;
+}
+
+.titulo{
+	background-color: #0C7F88;
+	border-bottom: solid 5px #20B3BF; 
+	border-radius: 5px 5px 0px 0px;
+	font-weight: bold;
+}
+
+.subtitulo{
+	background-color: #238188;
+}
+
+.puntos{
+
+}
+
+.foot{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(138, 245, 217, 0.7);
+	padding: 10px;
+	border-top: solid 1px #000;
+	font-family: 'Times New Roman';
+	font-size: 14px;
+	color: #000;
+}
+
+.foot a{
+	margin-left: 2%;
+}
+
+.comp{
+	width: 5%;
+	margin-left: 10%;
+}
+.tablet{
+	width: 3%;
+	margin-left: 2%;
+}
+
+.telef{
+	width: 2%;
+	margin-left: 2%;
+}
+

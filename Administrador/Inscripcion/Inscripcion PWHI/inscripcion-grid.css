@@ -1,0 +1,51 @@
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: 20 auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "tabla tabla tabla"
+						 "footer footer footer";
+}
+
+
+.menu{
+	grid-area: menu;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.tit{
+	grid-column: 2 / 3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reg{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+
+.contenido .miTabla{
+	grid-area: tabla;
+}
+
+.footer{
+	grid-area: footer;
+}

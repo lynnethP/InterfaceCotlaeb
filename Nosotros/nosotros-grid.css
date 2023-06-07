@@ -1,0 +1,51 @@
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	margin: 20 auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "menu menu menu"
+						 "carousel carousel carousel"
+						 "footer footer footer";
+}
+
+
+.menu{
+	grid-area: menu;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.cotlaeb{
+	grid-column: 1 / 2;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.titulo{
+	grid-column: 2 / 3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu .reg{
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+
+.contenido .container{
+	grid-area: carousel;
+}
+
+.footer{
+	grid-area: footer;
+}

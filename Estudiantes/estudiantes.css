@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: url(../imagenes/miFondo.png) center / cover;
+	background-attachment: fixed;
+}
+
+.tabla{
+	border: solid 1px #ff8000;
+	padding: 10px;
+}

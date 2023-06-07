@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio de Sesión</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="../imagenes/pnf.ico">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="login-grid.css">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+
+	<div class="contenedor">
+		<div class="menu">
+			<div class="cotlaeb">
+				<img src="../imagenes/logo.png">
+				<h2>Cotlaeb</h2>
+			</div>
+			
+			<div class="reg">
+				<img class="registrarse" src="../imagenes/registrarse.png">
+				<a href="../Registro/registro.html">Regístrate</a>
+			</div>
+
+		</div>
+
+		<div class="form">
+			<form id="formulario" name="login" >
+				<img class="imagen" src="../imagenes/admin.png">
+				<h2>Inicio de Sesión</h2>
+				<div class="inp-uno">
+					<img class="persona" src="../imagenes/persona.png"><input class="inp" type="text" name="usuario" id="nombre" placeholder="Usuario">
+				</div>
+				<div class="input-dos">
+					<img class="candado" src="../imagenes/candado.png"><input class="inp" type="password" name="password" id="clave" placeholder="Contraseña">
+				</div>
+					<div id="olvido">
+						<a href="#" class="cont">¿Has olvidado tu contraseña?</a>
+					</div>
+						
+					<input value="Acceder" onclick="Login()" type="button" class="boton"/> 
+			</form>
+		</div>
+
+		<footer  class="footer">&copy; Todos los derechos reservados. Lynneth Pereira - 2020  <a href="#">lynnethpereira12@gmail.com</a>
+            <img class="comp" src="../imagenes/comp.png">
+            <img class="tablet" src="../imagenes/tablet.png">
+            <img class="telef" src="../imagenes/telef.png">
+    	</footer>
+	</div>
+
+	<script src="login.js"></script>
+
+</body>
+</html>
